@@ -1,0 +1,11 @@
+.total-badge {
+  background: var(--primary);
+  color: white;
+  padding: 10px 22px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 16px;
+}
+ 
+.badge.pending { background: #fef3c7; color: #d97706; }
+ 

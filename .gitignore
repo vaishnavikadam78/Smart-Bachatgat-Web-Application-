@@ -1,0 +1,71 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python
+.venv/
+.venv-1/
+__pycache__/
+*.pyc
+
+# Databases and backups
+*.sqlite3
+*.db
+*.bak
+*.dump
+
+
+/smart-bachatgat-backend/seed_admin.py
+
+/smart-bachatgat-backend/*.sql
+
+
+
+# Dev scripts and notes (not part of the app)
+/*.py
+/*.txt
+/*.cmd
+/*.sh
+/*.bat
+!/start.bat
+/*.md
+!/README.md
+
+/smart-bachatgat-backend/test_*.py
+/smart-bachatgat-backend/verify_db.py
+/smart-bachatgat-backend/migrate_*.py
+/smart-bachatgat-backend/fix_*.py
+/smart-bachatgat-backend/cleanup_*.py
+/smart-bachatgat-backend/clean_and_setup.py
+/smart-bachatgat-backend/reset_seed_full.py
+/smart-bachatgat-backend/api_test.py
+/smart-bachatgat-backend/debug_member.py
+/smart-bachatgat-backend/run_setup.bat
+/smart-bachatgat-backend/validate_role_flows.ps1
+/smart-bachatgat-backend/*.sql

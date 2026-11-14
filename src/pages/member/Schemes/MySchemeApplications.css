@@ -1,0 +1,52 @@
+.applications-list {
+  display: grid;
+  gap: 12px;
+}
+
+.app-item {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 16px;
+  transition: all 0.3s;
+}
+
+.app-item:hover {
+  border-color: #cbd5e1;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.app-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.app-item-header h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.app-category {
+  margin: 4px 0 0;
+  font-size: 12px;
+  color: #64748b;
+}
+
+.app-status-badge {
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.app-date {
+  margin: 0;
+  font-size: 13px;
+  color: #64748b;
+}

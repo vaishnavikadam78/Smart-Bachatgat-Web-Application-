@@ -1,0 +1,37 @@
+.meeting-card {
+  background: white;
+  border-radius: 14px;
+  padding: 20px 24px;
+  border: 1px solid var(--border-light);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.2s;
+}
+.meeting-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); }
+.meeting-icon { font-size: 32px; }
+.meeting-info { flex: 1; }
+.meeting-info h3 { font-family: var(--font-head); font-size: 16px; margin-bottom: 4px; }
+.meeting-info p  { font-size: 13px; color: var(--text-gray); }
+/* ── Extra meeting styles ── */
+.meeting-form-card { background: white; border: 1.5px solid #e2e8f0; border-radius: 14px; padding: 24px; margin-bottom: 24px; box-shadow: 0 2px 12px rgba(0,0,0,.06); }
+.meeting-form-card h3 { margin: 0 0 18px; font-size: 16px; font-weight: 700; color: #0f172a; }
+.meeting-form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.meeting-strip { display: flex; gap: 14px; margin-bottom: 24px; flex-wrap: wrap; }
+.meeting-strip-item { background: white; border: 1.5px solid #e2e8f0; border-radius: 12px; padding: 16px 22px; display: flex; flex-direction: column; align-items: center; gap: 4px; min-width: 110px; box-shadow: 0 1px 4px rgba(0,0,0,.04); }
+.meeting-strip-val { font-size: 28px; font-weight: 800; }
+.meeting-strip-label { font-size: 12px; color: #64748b; font-weight: 500; }
+.meetings-list { display: flex; flex-direction: column; gap: 14px; }
+.meeting-card { background: white; border: 1.5px solid #e2e8f0; border-radius: 14px; padding: 18px 20px; display: flex; align-items: flex-start; gap: 16px; box-shadow: 0 1px 6px rgba(0,0,0,.05); transition: box-shadow .2s; }
+.meeting-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,.1); }
+.meeting-upcoming { border-left: 4px solid #8b5cf6; }
+.meeting-past     { border-left: 4px solid #10b981; opacity: .85; }
+.meeting-card-left .meeting-icon { font-size: 28px; }
+.meeting-card-body { flex: 1; }
+.meeting-card-title { font-size: 16px; font-weight: 700; color: #0f172a; margin-bottom: 6px; }
+.meeting-card-meta  { display: flex; flex-wrap: wrap; gap: 12px; font-size: 13px; color: #64748b; margin-bottom: 6px; }
+.meeting-card-agenda { font-size: 13px; color: #94a3b8; margin-top: 4px; }
+.meeting-card-right { display: flex; flex-direction: column; align-items: flex-end; gap: 8px; }
+.meeting-empty { text-align: center; padding: 64px 32px; color: #94a3b8; }
+.meeting-empty h3 { color: #64748b; margin: 12px 0 8px; }

@@ -1,0 +1,155 @@
+.txn-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.txn-stat-card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.txn-stat-icon {
+  font-size: 24px;
+}
+
+.txn-stat-value {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.txn-stat-label {
+  margin: 4px 0 0;
+  font-size: 12px;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.txn-filter-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.txn-filter-tab {
+  padding: 8px 16px;
+  border: 2px solid #e2e8f0;
+  background: #f8fafc;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  color: #64748b;
+  transition: all 0.2s;
+}
+
+.txn-filter-tab:hover {
+  border-color: #cbd5e1;
+  background: #f1f5f9;
+}
+
+.txn-filter-tab.active {
+  background: #3b82f6;
+  color: white;
+  border-color: #3b82f6;
+}
+
+.txn-table {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.txn-table-content {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.txn-table-content thead {
+  background: #f8fafc;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.txn-table-content th {
+  padding: 12px 16px;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 600;
+  color: #64748b;
+  text-transform: uppercase;
+}
+
+.txn-table-content td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 14px;
+  color: #475569;
+}
+
+.txn-table-content tbody tr:hover {
+  background: #f8fafc;
+}
+
+.txn-type-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.txn-type-badge.deposit {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.txn-type-badge.loan {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.txn-type-badge.repayment {
+  background: #f3e8ff;
+  color: #6b21a8;
+}
+
+.txn-status-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  background: #f0fdf4;
+  color: #15803d;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.amount {
+  font-weight: 600;
+  color: #0f172a;
+}
+
+@media (max-width: 768px) {
+  .txn-stats-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .txn-table-content {
+    font-size: 12px;
+  }
+  
+  .txn-table-content th,
+  .txn-table-content td {
+    padding: 8px 12px;
+  }
+}
